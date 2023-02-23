@@ -133,7 +133,6 @@ http://nodejs-demo-demo-project.apps.CLUSTER_FQDN.com/
 A script to automate the process is available:
 
 ```
-
 ./run.sh --help
 
 ```
@@ -141,7 +140,6 @@ A script to automate the process is available:
 To deploy the app locally use dev as an argument, add --build if you want to build the image before deploying.
 
 ```
-
 ./run.sh dev --build
 
 ```
@@ -149,11 +147,6 @@ To deploy the app locally use dev as an argument, add --build if you want to bui
 ### Prod
 
 ```
-
 ./run.sh prod --build
-
-```
-
-```
 
 ```
