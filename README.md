@@ -1,6 +1,7 @@
 # node-app-openshift-example
 
 Build a Node.js Application for Openshift
+https://galvarado.com.mx/post/desplegar-aplicaciones-en-openshift/
 
 ## Prerequisites
 
