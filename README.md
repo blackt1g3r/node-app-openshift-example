@@ -112,15 +112,14 @@ oc apply -f orchestration/deployment,yml
 
 Create a service:
 
-````
-oc expose deployment nodejs-demo --name nodejs-demo-svc --port 8080 --target-port=8080```
+```
+oc expose deployment nodejs-demo --name nodejs-demo-svc --port 8080 --target-port=8080
 
-````
+```
 
 Expose the app through a route:
 
 ```
-
 oc expose service nodejs-demo-svc -l route=external --name=nodejs-demo
 
 ```
