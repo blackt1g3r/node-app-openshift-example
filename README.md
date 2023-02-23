@@ -114,14 +114,12 @@ Create a service:
 
 ```
 oc expose deployment nodejs-demo --name nodejs-demo-svc --port 8080 --target-port=8080
-
 ```
 
 Expose the app through a route:
 
 ```
 oc expose service nodejs-demo-svc -l route=external --name=nodejs-demo
-
 ```
 
 Access the application
@@ -133,19 +131,16 @@ A script to automate the process is available:
 
 ```
 ./run.sh --help
-
 ```
 
 To deploy the app locally use dev as an argument, add --build if you want to build the image before deploying.
 
 ```
 ./run.sh dev --build
-
 ```
 
 ### Prod
 
 ```
 ./run.sh prod --build
-
 ```
