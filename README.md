@@ -11,6 +11,7 @@ To follow this tutorial, you will need:
 - Podman installed
 - An Openshift cluster where the application will run.
   - It should have the internal redistry exposed.
+  - A DNS entry for the \*.apps wildcard subdomain should be set ups.
 
 ## Run the app locally
 
@@ -114,15 +115,17 @@ Create a service:
 ````
 oc expose deployment nodejs-demo --name nodejs-demo-svc --port 8080 --target-port=8080```
 
-Create a route:
-
 ````
+
+Expose the app through a route:
 
 oc expose service nodejs-demo-svc -l route=external --name=nodejs-demo
 
 ```
 
 Access the application
+http://nodejs-demo-demo-project.apps.CLUSTER_FQDN.com/
+
 
 ## run.sh
 
