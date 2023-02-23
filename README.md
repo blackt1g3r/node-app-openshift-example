@@ -119,13 +119,14 @@ oc expose deployment nodejs-demo --name nodejs-demo-svc --port 8080 --target-por
 
 Expose the app through a route:
 
+```
+
 oc expose service nodejs-demo-svc -l route=external --name=nodejs-demo
 
 ```
 
 Access the application
 http://nodejs-demo-demo-project.apps.CLUSTER_FQDN.com/
-
 
 ## run.sh
 
@@ -150,6 +151,8 @@ To deploy the app locally use dev as an argument, add --build if you want to bui
 ```
 
 ./run.sh prod --build
+
+```
 
 ```
 
