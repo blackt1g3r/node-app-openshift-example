@@ -43,7 +43,7 @@ elif [ "$1" == "dev" ];then
     echo "Starting development environment"
     docker stop nodejs-demo
     docker rm nodejs-demo
-    docker run --name nodejs-demo -p 80:8080 -d nodejs-demo
+    docker run --name nodejs-demo -p 8080:8080 -d nodejs-demo
     docker ps
 
 # Deploy to k8s (prod) 

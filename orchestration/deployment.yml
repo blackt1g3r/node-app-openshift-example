@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs-demo
+  template:
+    metadata:
+      labels:
+        app: nodejs-demo
+    spec:
+      containers:
+      - name: nodejs-demo
+        image: default-route-openshift-image-registry.apps.mtvosddev.bbej.p1.openshiftapps.com/demo-project/nodejs-demo
+        ports:
+        - containerPort: 8080
