@@ -1,4 +1,7 @@
-require('@instana/collector')();
+require('@instana/collector')({
+  agentHost: '172.30.3.10',
+  agentPort: 42699
+});
 const express = require('express');
 const app = express();
 const router = express.Router();
